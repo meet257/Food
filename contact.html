@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food form</title>
+    <style>
+        * {
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #form {
+            position: relative;
+            margin: 100px auto;
+            left: 533px;
+        }
+
+        #form label {
+            color: black;
+            font-size: 26px;
+        }
+
+        #name {
+            margin: auto;
+            position: relative;
+            text-align: center;
+            border: 2px solid black;
+            color: white;
+            width: 414px;
+            height: 46px;
+            border-radius: 5px;
+        }
+
+        #text {
+            margin: auto;
+            position: relative;
+            text-align: center;
+            width: 414px;
+            height: 46px;
+            border-radius: 5px;
+        }
+
+        #KG {
+            margin: auto;
+            position: relative;
+            text-align: center;
+            width: 414px;
+            height: 46px;
+            border-radius: 5px;
+        }
+
+        #bt {
+            margin: 20px auto;
+            position: relative;
+            text-align: center;
+            left: 6px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        #bar li a {
+            position: relative;
+            margin: -8px;
+            padding: 21px;
+            text-decoration: none;
+            color: brown;
+            font-size: 26px;
+            direction: unset;
+        }
+
+        .nav {
+            border: 2px solid black;
+            display: flex;
+            background-color: burlywood;
+        }
+
+        li img {
+            width: 100px;
+        }
+
+        li a:hover {
+            background-color: red;
+            color: whitesmoke;
+            text-shadow: black;
+        }
+
+        li a:active {
+            background-color: green;
+            color: whitesmoke;
+        }
+
+        #Search {
+            position: relative;
+            right: -297px;
+            width: 300px;
+            height: 44px;
+            padding: 8px;
+            margin: auto 10px;
+            border-radius: 10px;
+            border: white;
+        }
+
+        #btn {
+            left: 295px;
+            position: relative;
+            height: 44px;
+            padding: 8px;
+            margin: auto 10px;
+            border-radius: 10px;
+            border: white;
+            background-color: red;
+            width: 97px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav id="navbar">
+        <ul id="bar">
+            <li class="nav">
+                <img src="http://ciaologo.com/timthumb.php?src=1625&query=1&h=500&w=800&wm=1&zc=2&b=10" alt="">
+                <a href="/">Home</a>
+                <a href="/servise">Servise</a>
+                <a href="/about">About</a>
+                <a href="/contact" target="_blank">Contact us</a>
+
+                <input type="search" name="Search" id="Search">
+                <input type="button" value="Search" id="btn">
+            </li>
+        </ul>
+    </nav>
+
+    <form action="/contact" method="post" id="form">
+        <h1>Contac me!</h1>
+
+        <label for="text">Enter your name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your Name"><br><br>
+
+        <label for="text">Enter food name</label><br>
+        <input type="text" name="text" id="text" placeholder="Enter your food Name"><br><br>
+
+        <label for="text">Enter food kg</label><br>
+        <input type="text" name="KG" id="KG" placeholder="Enter your food Kg"><br><br>
+
+        <button id="bt">Submit</button>
+    </form>
+</body>
+
+</html>
